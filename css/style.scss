@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@mixin flex($a: center, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin inner($w: 90%, $mw: 600px) {
+    width: $w;
+    max-width: $mw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+
+}
+
+
+/*検索*/
+.search {
+    margin-top: 60px;
+    text-align: right;
+
+    &__inner {
+        @include inner();
+    }
+
+
+}
+
+.btn {
+    @include flex();
+}
+
+
+/*動画*/
+#player {
+    margin-top: 70px;
+    display: block;
+    @include inner();
+
+}
+
+.music {
+    margin-top: 30px;
+    text-align: left;
+
+    &__inner {
+        @include inner();
+        @include flex(center, start);
+    }
+}
+
+/*sound*/
+.sound {
+    width: 45%;
+    text-align: left;
+
+    &__icon {
+        width: 10%;
+    }
+}
+
+/*mute*/
+.mutes {
+    width: 45%;
+}
+
+/*speed*/
+.radio {
+    text-align: center;
+
+    &__inner {
+        @include inner();
+    }
+}
+
+
+
+.vol {
+    @include flex(center, right);
+}
+
+
+/*play*/
+.play {
+    margin-top: 30px;
+
+
+    &__inner {
+        @include inner();
+        @include flex(center, center);
+    }
+
+    &__btn {
+        width: 10%;
+        margin: 0 20px;
+    }
+}
+
+
+
+/*
+
+
+nav {
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+    padding: 30px 0;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+#player {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.play {
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#doplay {
+    margin: 0 50px;
+    padding: 5px 10px;
+    display: inline-block;
+
+}
+
+#volume {
+    margin-top: 30px;
+}
+
+.stopping {
+    padding-left: 250px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stop {
+    margin-top: 30px;
+    display: flex;
+}
+
+#dopause {
+    margin-right: 100px;
+
+}
+
+#mute {
+    margin-top: 10px;
+}
+
+.speed {
+    margin-top: 20px;
+}
+
+#MovieId {
+    margin-top: 40px;
+}
+
+.btn {
+    width: 25%;
+}*/
