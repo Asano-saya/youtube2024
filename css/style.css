@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffc2f2;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+.menu {
+    margin-top: 50px;
+
+
+}
+
+.menu__inner {
+    padding: 20px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+/*検索*/
+.search {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.search__inner {
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchBtn {
+    background-color: #fff;
+    border: #ff00cc 2px solid;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*動画*/
+#player {
+    margin-top: 70px;
+    padding: 10px;
+    background-color: #ff00cc;
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.music {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.music__inner {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+/*sound*/
+.sound {
+    width: 45%;
+    text-align: left;
+}
+
+.sound__icon {
+    width: 10%;
+}
+
+/*mute*/
+.mute {
+    width: 45%;
+}
+
+/*speed*/
+.radio {
+    text-align: center;
+}
+
+.radio__inner {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+/*play*/
+.play {
+    margin-top: 15px;
+}
+
+.play__inner {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.play__btn {
+    width: 10%;
+    margin: 0 20px;
+}
+
+@media (min-width:600px) {
+    .flex {
+        width: 90%;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .menu__inner {
+        width: 90%;
+
+
+    }
+
+    .search {
+        text-align: right;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
